@@ -10,10 +10,14 @@ export const Button: FC<ButtonType> = ({children, type= 'basic', isWide= false, 
 
     switch (type) {
         case 'basic':
-            otherProps.className ||= 'basic';
+            otherProps.className ||= 'basic'
             break;
         case 'trans':
             otherProps.className ||= 'transparent'
+             break;
+        case 'invert':
+            otherProps.className ||= 'invert'
+            break;
     }
 
     if(isWide) {

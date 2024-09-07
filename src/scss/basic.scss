@@ -2,18 +2,29 @@
 @import "variables";
 
 html {
-  font-size: 12px;
   scroll-behavior: smooth;
+
+  @media (min-width: $BP_desk_wide) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $BP-desk_norm) {
+    font-size: 12px;
+  }
+
 }
 
 .page {
-  padding: 0 5rem;
+  padding: 0 10rem;
 }
 
 * {
   font-family: 'TT Firs Neue', sans-serif;
   font-size: 1rem;
   font-weight: normal;
+  line-height: 1.3;
+
+  white-space: nowrap;
 }
 
 h1 {

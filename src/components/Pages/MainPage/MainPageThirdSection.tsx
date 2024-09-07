@@ -9,20 +9,20 @@ export const MainPageThirdSection = () => {
                 <div className="title">
                     <div>
                         <h2
-                            data-aos-duration="700" data-aos='fade-left'>Платежный агент для юридических лиц РФ</h2>
+                            data-aos-duration="1000" data-aos='fade-left'>Платежный агент для <br/>юридических лиц РФ</h2>
                         <p
-                            data-aos-duration="1000" data-aos='fade-left'>Мы помогаем оплачивать инвойсы по агентскому договору, быстрее всех на рынке</p>
+                            data-aos-duration="1300" data-aos='fade-left'>Мы помогаем оплачивать инвойсы<br/> по агентскому договору,<br/>быстрее всех на рынке</p>
                     </div>
                 </div>
 
                 <div className="steps">
                     <div className='left step one'
-                         data-aos-duration="700" data-aos='flip-up'>
+                         data-aos-duration="1000" data-aos='flip-up'>
                         <h2>1 этап</h2>
                         <p>Заключаете договор с нашей компанией-нерезидентом с открытым счетом в банке </p>
                     </div>
                     <div className='arrow two'
-                         data-aos-duration="700" data-aos='flip-up'>
+                         data-aos-duration="1000" data-aos='flip-up'>
                         <img src={blueArrow} alt='arrow to next step' />
                         <div className="right step">
                             <h2>2 этап</h2>
@@ -31,7 +31,7 @@ export const MainPageThirdSection = () => {
                     </div>
 
                     <div className='arrow'
-                         data-aos-duration="700" data-aos='flip-up'>
+                         data-aos-duration="1000" data-aos='flip-up'>
                         <div className="left step three">
                             <h2>3 этап</h2>
                             <p>Конвертируем рубли в валюту обозначенную контрактом и инвойсом</p>
@@ -40,7 +40,7 @@ export const MainPageThirdSection = () => {
                     </div>
 
                     <div className='four'
-                         data-aos-duration="700" data-aos='flip-up'>
+                         data-aos-duration="1000" data-aos='flip-up'>
                         <img src={main3} alt="bank"/>
                         <div className='right step'>
                             <h2>4 этап</h2>

@@ -30,4 +30,11 @@ button {
   &.wide {
     padding: 1.3rem 6rem;
   }
+
+  &.invert {
+    background: $whiteColor;
+
+    color: $mainColor;
+
+  }
 }
