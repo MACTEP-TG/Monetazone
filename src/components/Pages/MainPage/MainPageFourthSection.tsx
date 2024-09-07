@@ -15,23 +15,23 @@ export const MainPageFourthSection = () => {
 
                     <div className='badges'>
                         <Badge
-                            data-aos-duration="900" data-aos='fade-down-right'>Касса</Badge>
+                            data-aos-duration="800" data-aos='fade-down-right'>Касса</Badge>
                         <Badge
-                            data-aos-duration="1100" data-aos='fade-down-right'>Курьер</Badge>
+                            data-aos-duration="900" data-aos='fade-down-right'>Курьер</Badge>
                     </div>
 
                     <p
-                        data-aos-duration="1200" data-aos='fade-down-right'>
+                        data-aos-duration="1000" data-aos='fade-down-right'>
                         Выводите наличные по всему ЕС, Азии <br/>СНГ, Северной Америке и других континентах
                     </p>
 
                     <Button
                         isWide={true}
-                        data-aos-duration="1500" data-aos='fade-down-right'>Гео выдачи наличных</Button>
+                        data-aos-duration="1100" data-aos='fade-down-right'>Гео выдачи наличных</Button>
                 </div>
 
                 <img
-                    data-aos-duration="2000" data-aos='fade-left'
+                    data-aos-duration="1200" data-aos='fade-left'
                     src={main4} alt="a lot of money"/>
 
 

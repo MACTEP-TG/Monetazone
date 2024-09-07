@@ -14,8 +14,8 @@ export const MainPageFirstSection = () => {
 
     return (
         <>
-            <section className="mainPage-first flex">
-                <div className="flex">
+            <section className="mainPage-first">
+                <div className="body">
                     <img data-aos-duration="1000" data-aos='fade-right' src={main1} alt=""/>
                     <div className="block">
                         <h1 data-aos-duration="1300" data-aos='fade-left'>
