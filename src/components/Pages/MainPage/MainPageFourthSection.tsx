@@ -33,8 +33,6 @@ export const MainPageFourthSection = () => {
                 <img
                     data-aos-duration="1200" data-aos='fade-left'
                     src={main4} alt="a lot of money"/>
-
-
             </section>
         </>
     )
