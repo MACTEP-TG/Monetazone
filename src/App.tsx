@@ -4,6 +4,8 @@ import {useEffect} from "react";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import {Footer} from "./components/Pages/Parts/Footer/Footer.tsx";
+import {Route, Routes} from "react-router-dom";
+import {AboutPage} from "./components/Pages/AboutPage/AboutPage.tsx";
 
 function App() {
     useEffect(() => {
@@ -16,7 +18,10 @@ function App() {
     return (
         <>
             <Header />
-            <MainPage />
+            <Routes>
+                <Route path='*' element={<MainPage />} />
+                <Route path='/about' element={<AboutPage />} />
+            </Routes>
             <Footer />
         </>
     )

@@ -2,19 +2,20 @@ import './header.scss'
 import logo from '../../../../assets/svgs/logo.svg'
 import support from '@/assets/svgs/support.svg'
 import {Button} from "../../../UI/Buttons/Button/Button.tsx";
+import {NavLink} from "react-router-dom";
 
 
 export const Header = () => {
     return (
         <>
             <header>
-                <div className="logo">
+                <NavLink to='/http://localhost:5173/' className="logo">
                     <img src={logo} alt="CoinSwap"/>
-                </div>
+                </NavLink>
 
                 <nav>
                     <ul>
-                        <li><a>О нас</a></li>
+                        <li><NavLink to='/about'>О нас</NavLink></li>
                         <li><a>ВЭД</a></li>
                         <li><a className="flex">Swift<span>&</span>Sepa</a></li>
                         <li><a>Обмен</a></li>

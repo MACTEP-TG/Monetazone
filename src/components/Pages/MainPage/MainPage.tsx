@@ -11,14 +11,14 @@ export const MainPage = () => {
 
     return (
         <>
-            <div className="page">
+            <main className="page">
                 <MainPageFirstSection />
                 <MainPageSecondSection />
                 <MainPageThirdSection />
                 <MainPageFourthSection />
                 <MainPageFifthSection />
                 <MainPageSixthSection />
-            </div>
+            </main>
         </>
     )
 }

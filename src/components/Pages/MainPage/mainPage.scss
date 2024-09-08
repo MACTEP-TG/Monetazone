@@ -2,7 +2,7 @@
 
 section.mainPage-first {
 
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 60px);
 
   display: flex;
 
@@ -63,11 +63,13 @@ section.mainPage-second {
 
     background-color: $mainColor;
 
-    height: 60vh;
+    height: 50vh;
     border-radius: 1.5rem;
     display: flex;
 
     justify-content: space-between;
+
+    width: 100%;
   }
 
   & p {
@@ -222,11 +224,15 @@ section.mainPage-fifth {
 
     background-color: $mainColor;
 
-    height: 60vh;
+    height: 50vh;
     border-radius: 1.5rem;
     display: flex;
 
     justify-content: space-between;
+
+    align-items: center;
+
+    width: 100%;
   }
 
   & img {
