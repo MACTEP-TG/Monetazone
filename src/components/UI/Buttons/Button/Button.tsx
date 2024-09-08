@@ -18,15 +18,20 @@ export const Button: FC<ButtonType> = ({children, type= 'basic', isWide= false, 
         case 'invert':
             otherProps.className ||= 'invert'
             break;
+        case 'white':
+            otherProps.className ||= 'white'
+            break;
     }
 
     if(isWide) {
         otherProps.className += ' wide'
     }
 
+
     return (
         <>
             <button
+                style={{transitionDuration: '1s'}}
                 {...otherProps}>
                 {children}
             </button>

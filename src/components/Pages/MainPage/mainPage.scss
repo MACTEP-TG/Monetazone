@@ -22,6 +22,8 @@ section.mainPage-first {
 
   & h1 {
     text-align: right;
+
+    white-space: break-spaces;
   }
 
   & img {
@@ -211,6 +213,10 @@ section.mainPage-fourth {
 section.mainPage-fifth {
   height: 100vh;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   & .background {
     padding: 2rem;
 
@@ -251,10 +257,16 @@ section.mainPage-fifth {
 
 section.mainPage-sixth {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
   & .section {
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
 
     & img {
       width: 35rem;

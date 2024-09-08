@@ -1,8 +1,9 @@
 import {MainPage} from "./components/Pages/MainPage/MainPage.tsx";
 import {Header} from "./components/Pages/Parts/Header/Header.tsx";
 import {useEffect} from "react";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
+import AOS from 'aos';
+import {Footer} from "./components/Pages/Parts/Footer/Footer.tsx";
 
 function App() {
     useEffect(() => {
@@ -14,8 +15,9 @@ function App() {
 
     return (
         <>
-            <Header/>
-            <MainPage/>
+            <Header />
+            <MainPage />
+            <Footer />
         </>
     )
 }

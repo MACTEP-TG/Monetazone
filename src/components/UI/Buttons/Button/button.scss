@@ -8,9 +8,15 @@ button {
   font-size: 1rem;
   font-weight: 600;
 
+  transition-duration: 1s !important;
+
   &.basic {
     background: $mainButtonColor;
     color: white;
+
+    &:hover {
+      background: $blackColor;
+    }
   }
 
   &.transparent {
@@ -25,6 +31,11 @@ button {
     padding-bottom: 0.2rem !important;
 
     border-radius: 7px;
+
+    &:hover {
+      background: $mainColor;
+      color: $whiteColor;
+    }
   }
 
   &.wide {
@@ -35,6 +46,36 @@ button {
     background: $whiteColor;
 
     color: $mainColor;
+
+    border: 1px solid $whiteColor;
+
+    &:hover {
+      background: $mainColor;
+      color: $whiteColor;
+
+      border: 1px solid $whiteColor;
+    }
+  }
+
+  &.white {
+    background: $whiteColor;
+
+    color: $blackColor;
+
+    border: 1px solid $whiteColor;
+
+    & div {
+      transition-duration: .3s;
+    }
+
+    &:hover {
+      background: $blackColor;
+      color: $whiteColor;
+
+      & div {
+        color: $whiteColor !important;
+      }
+    }
 
   }
 }

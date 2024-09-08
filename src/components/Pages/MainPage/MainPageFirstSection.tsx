@@ -11,7 +11,7 @@ export const MainPageFirstSection = () => {
         80,
         setTypedText)
 
-
+    const strangeComment = 'Быстрые и надежные <br/>Swift <span>&</span> Sepa переводы<br/> по всему миру!'
     return (
         <>
             <section className="mainPage-first">
@@ -19,7 +19,8 @@ export const MainPageFirstSection = () => {
                     <img data-aos-duration="1000" data-aos='fade-right' src={main1} alt=""/>
                     <div className="block">
                         <h1 data-aos-duration="1300" data-aos='fade-left'>
-                            Быстрые и надежные <br/>Swift <span>&</span> Sepa переводы<br/> по всему миру!</h1>
+                            {typedText}
+                        </h1>
                         <div className="buttons">
                             <Button
                                 data-aos-duration="1600"

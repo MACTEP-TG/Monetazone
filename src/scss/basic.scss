@@ -3,6 +3,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
   @media (min-width: $BP-desk_norm) {
     font-size: 12px;
@@ -49,10 +50,6 @@ a {
   font-weight: 500;
 }
 
-.mainColor {
-  color: $mainColor;
-}
-
 .flex {
   display: flex;
   justify-content: center;
@@ -67,4 +64,8 @@ p {
   font-weight: 500;
 
   font-size: 1rem;
+}
+
+.bold {
+  font-weight: 700;
 }
