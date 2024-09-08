@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <>
             <header>
-                <NavLink to='/http://localhost:5173/' className="logo">
+                <NavLink to='/' className="logo">
                     <img src={logo} alt="CoinSwap"/>
                 </NavLink>
 
