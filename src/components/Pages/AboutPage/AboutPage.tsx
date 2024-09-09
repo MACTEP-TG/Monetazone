@@ -13,6 +13,7 @@ export const AboutPage = () => {
     return (
         <>
             <main className="page aboutPage">
+                <h1>LOOOOOOOOOOOOOOOOOOOX</h1>
                 <AboutPageFirstSection />
                 <AboutPageSecondSection />
                 <AboutPageThirdSection />
