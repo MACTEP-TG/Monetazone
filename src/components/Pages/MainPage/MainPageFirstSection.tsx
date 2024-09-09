@@ -1,17 +1,7 @@
 import main1 from "@/assets/svgs/main-1.svg";
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
-import {useState} from "react";
-import {useTypeEffect} from "../../../hooks/useTypeEffect.ts";
 
 export const MainPageFirstSection = () => {
-
-    const [typedText, setTypedText] = useState('');
-
-    useTypeEffect('Быстрые и надежные Swift и Sepa переводы по всему миру!',
-        80,
-        setTypedText)
-
-    const strangeComment = 'Быстрые и надежные <br/>Swift <span>&</span> Sepa переводы<br/> по всему миру!'
     return (
         <>
             <section className="mainPage-first">
@@ -19,8 +9,9 @@ export const MainPageFirstSection = () => {
                     <img data-aos-duration="1000" data-aos='fade-right' src={main1} alt=""/>
                     <div className="block">
                         <h1 data-aos-duration="1300" data-aos='fade-left'>
-                            {typedText}
+                            Быстрые и надежные <br/>Swift <span className='h1'>&</span> Sepa переводы<br/> по всему миру!
                         </h1>
+
                         <div className="buttons">
                             <Button
                                 data-aos-duration="1600"

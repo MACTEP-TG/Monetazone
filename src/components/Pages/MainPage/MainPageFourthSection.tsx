@@ -1,5 +1,5 @@
 import main4 from '@/assets/svgs/main-4.svg'
-import {Badge} from "../../UI/Badges/Badge/Budge.tsx";
+import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
 
 export const MainPageFourthSection = () => {

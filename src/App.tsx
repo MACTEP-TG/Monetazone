@@ -6,6 +6,8 @@ import AOS from 'aos';
 import {Footer} from "./components/Pages/Parts/Footer/Footer.tsx";
 import {Route, Routes} from "react-router-dom";
 import {AboutPage} from "./components/Pages/AboutPage/AboutPage.tsx";
+import {SwiftSepaPage} from "./components/Pages/SwiftSepaPage/SwiftSepaPage.tsx";
+import {ExchangerPage} from "./components/Pages/ExchangerPage/ExchangerPage.tsx";
 
 function App() {
     useEffect(() => {
@@ -18,10 +20,16 @@ function App() {
     return (
         <>
             <Header />
-            <Routes>
-                <Route path='*' element={<MainPage />} />
-                <Route path='/about' element={<AboutPage />} />
-            </Routes>
+
+            <main>
+                <Routes>
+                    <Route path='*' element={<MainPage />} />
+                    <Route path='/about' element={<AboutPage />} />
+                    <Route path='/swiftsepa' element={<SwiftSepaPage />} />
+                    <Route path='/exсhanger' element={<ExchangerPage />} />
+                </Routes>
+            </main>
+
             <Footer />
         </>
     )

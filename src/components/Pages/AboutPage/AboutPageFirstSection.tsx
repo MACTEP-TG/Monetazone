@@ -1,16 +1,9 @@
 import about1 from '@/assets/svgs/about-1.svg'
-import {Badge} from "../../UI/Badges/Badge/Budge.tsx";
+import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
 import {useState} from "react";
 import {useTypeEffect} from "../../../hooks/useTypeEffect.ts";
 
 export const AboutPageFirstSection = () => {
-    const [typedText, setTypedText] = useState('');
-
-    useTypeEffect('Мы - проверенный ВЭД брокер на рынке финансов Yan Hait и Monetazone',
-        80,
-        setTypedText)
-
-    const strangeComment = 'Мы - проверенный <br /> ВЭД брокер<br /> на рынке финансов<br /> Yan Hait <span>&</span> Monetazone'
 
     return (
         <>
@@ -27,7 +20,7 @@ export const AboutPageFirstSection = () => {
                     <h1 data-aos-duration="1200"
                         data-aos='fade-left'
                         className="title">
-                        {typedText}
+                        Мы - проверенный <br /> ВЭД брокер<br /> на рынке финансов<br /> Yan Hait <span className='span h1'>&</span> Monetazone
                     </h1>
 
                     <div className="badges">

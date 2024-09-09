@@ -17,14 +17,14 @@ export const Header = () => {
                     <ul>
                         <li><NavLink to='/about'>О нас</NavLink></li>
                         <li><a>ВЭД</a></li>
-                        <li><a className="flex">Swift<span>&</span>Sepa</a></li>
+                        <li><NavLink to='swiftsepa' className="flex">Swift<span>&</span>Sepa</NavLink></li>
                         <li><a>Обмен</a></li>
                         <li><a>Выдача наличных</a></li>
                     </ul>
                 </nav>
 
                 <div className="menu">
-                    <a className="mainColor">Онлайн обменник</a>
+                    <NavLink to='/exсhanger' className="mainColor">Онлайн обменник</NavLink>
                     <img className="pointer" src={support} alt="support icon"/>
                     <Button>Создать заявку</Button>
                 </div>

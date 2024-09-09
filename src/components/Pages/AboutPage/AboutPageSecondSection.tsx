@@ -1,4 +1,4 @@
-import {Badge} from "../../UI/Badges/Badge/Budge.tsx";
+import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
 import about2 from '@/assets/svgs/about-2.svg'
 
 export const AboutPageSecondSection = () => {

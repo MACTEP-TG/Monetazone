@@ -1,6 +1,8 @@
 @import "reset";
 @import "variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -39,7 +41,7 @@ h2 {
 }
 
 span {
-  font-family: Arial, sans-serif;
+  font-family: "Trocchi", serif;
 }
 
 a {
@@ -68,4 +70,8 @@ p {
 
 .bold {
   font-weight: 700;
+}
+
+.h1 {
+  font-size: $h1FS;
 }

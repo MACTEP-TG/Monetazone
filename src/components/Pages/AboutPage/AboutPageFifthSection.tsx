@@ -1,4 +1,4 @@
-import {Badge} from "../../UI/Badges/Badge/Budge.tsx";
+import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
 import about5 from '@/assets/svgs/about-5.svg'
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
 

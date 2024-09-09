@@ -1,0 +1,39 @@
+.swiftSepaPage {
+
+    & .firstSection {
+      display: flex;
+      height: calc(100vh - 60px);
+      justify-content: space-between;
+      align-items: center;
+
+      & img {
+        width: 30rem;
+      }
+
+      & .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+
+        gap: 2rem;
+        & .title {
+          text-align: end;
+        }
+
+        & .badges {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, auto);
+          gap: 0.2rem;
+
+          text-align: center;
+
+        }
+
+        & .guide {
+          text-align: end;
+        }
+      }
+    }
+}
