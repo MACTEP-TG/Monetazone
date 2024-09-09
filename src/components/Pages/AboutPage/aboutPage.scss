@@ -1,11 +1,39 @@
 @import '@scss/_variables.scss';
 
-section.aboutPage-first {
-  height: calc(100vh - 60px);
+.aboutLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
 
+  text-align: start;
+
+  width: 100%;
+}
+
+.aboutRight {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+
+  text-align: end;
+}
+
+.aboutPage section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100vh;
+}
+
+section.aboutPage-first {
+  height: calc(100vh - 60px);
+
+  & .title {
+    width: 40rem;
+    text-wrap: wrap;
+  }
 
   & .left {
     display: flex;
@@ -48,8 +76,8 @@ section.aboutPage-first {
 
     & .badges {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* 4 columns */
-      grid-template-rows: repeat(2, auto); /* 2 rows */
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, auto);
       gap: 0.2rem;
 
       text-align: center;
@@ -60,6 +88,79 @@ section.aboutPage-first {
       text-align: end;
     }
   }
+}
 
+section.aboutPage-second {
 
+  & .aboutLeft {
+    p {
+      text-wrap: wrap;
+    }
+  }
+
+  & img {
+    width: 40rem;
+  }
+}
+
+section.aboutPage-third {
+  & img {
+    width: 35rem;
+  }
+}
+section.aboutPage-fourth {
+  & img {
+    width: 30rem;
+  }
+}
+section.aboutPage-fifth {
+  & img {
+    width: 40rem;
+  }
+
+  & .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+    gap: 0.3rem
+  }
+}
+section.aboutPage-sixth {
+  & img {
+    width: 40rem;
+  }
+
+  .badges {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.3rem;
+    text-align: center;
+  }
+}
+section.aboutPage-seventh {
+  & img {
+    width: 30rem;
+  }
+
+  & .aboutRight {
+    & div {
+      display: flex;
+      flex-direction: column;
+      gap: .3rem;
+
+      & .badges {
+        display: flex;
+        flex-direction: row;
+        gap: .3rem;
+      }
+    }
+  }
+}
+section.aboutPage-eight {
+  & img {
+    width: 35rem;
+  }
 }

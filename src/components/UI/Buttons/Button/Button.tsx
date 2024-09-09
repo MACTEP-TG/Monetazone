@@ -1,9 +1,11 @@
-import {FC, ReactNode} from "react";
+import {FC} from "react";
 import './button.scss'
 
 type ButtonType = {
-    type?: 'basic' | 'trans'
+    type?: 'basic' | 'trans' | 'invert' | 'white'
     className?: string
+    children: any
+    isWide: boolean
 }
 
 export const Button: FC<ButtonType> = ({children, type= 'basic', isWide= false, ...otherProps}) => {
