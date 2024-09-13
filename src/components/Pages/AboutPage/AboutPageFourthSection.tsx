@@ -4,7 +4,7 @@ import {Button} from "../../UI/Buttons/Button/Button.tsx";
 export const AboutPageFourthSection = () => {
     return (
         <>
-            <section className='aboutPage-fourth'>
+            <section id={'4'} className='aboutPage-fourth'>
                 <div className="aboutLeft">
                     <h2
                         data-aos-duration="1000"

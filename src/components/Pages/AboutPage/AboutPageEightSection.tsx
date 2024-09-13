@@ -6,7 +6,7 @@ import {Button} from "../../UI/Buttons/Button/Button.tsx";
 export const AboutPageEightSection = () => {
     return (
         <>
-            <section className='aboutPage-eight'>
+            <section id={'8'} className='aboutPage-eight'>
                 <div className="aboutLeft">
                     <h2
                         data-aos-duration="1000"

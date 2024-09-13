@@ -1,3 +1,5 @@
+@import '@scss/_variables.scss';
+
 .swiftSepaPage {
 
     & .firstSection {
@@ -36,4 +38,65 @@
         }
       }
     }
+
+  & .secondSection {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+
+    & .currencies {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      & .currency {
+
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 0.2rem;
+      }
+
+      & .currency_body {
+        width: 100%;
+        height: 5rem;
+
+        border-radius: 1rem;
+
+        position: relative;
+        overflow: hidden;
+
+        border: 1px solid $blackColor;
+
+        & img {
+
+        }
+      }
+    }
+
+    & .body {
+      background: $mainColor;
+      border-radius: 2rem;
+
+      padding: 2rem 3rem;
+
+      display: flex;
+      justify-content: space-between;
+
+      & .left {
+        color: $whiteColor;
+      }
+
+      & .right {
+        width: 100%;
+
+        & img {
+          width: 30rem;
+        }
+      }
+    }
+  }
 }

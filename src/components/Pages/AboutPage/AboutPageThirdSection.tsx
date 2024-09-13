@@ -4,7 +4,7 @@ import about3 from '@/assets/svgs/about-3.svg'
 export const AboutPageThirdSection = () => {
     return (
         <>
-            <section className='aboutPage-third'>
+            <section id={'3'} className='aboutPage-third'>
                 <img
                     data-aos-duration="1000"
                     data-aos='fade-right'

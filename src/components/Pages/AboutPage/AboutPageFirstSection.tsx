@@ -25,36 +25,43 @@ export const AboutPageFirstSection = () => {
 
                     <div className="badges">
                         <Badge
-                        data-aos-duration="1100"
-                        data-aos='fade-up'
-                        >#О нас</Badge>
+                            data-aos-duration="1100"
+                            data-aos='fade-up'
+                            >#О нас</Badge>
                         <Badge
-                        data-aos-duration="1200"
-                        data-aos='fade-up'
-                        >#Гарантии</Badge>
+                            targetId={'2'}
+                            data-aos-duration="1200"
+                            data-aos='fade-up'
+                            >#Гарантии</Badge>
                         <Badge
-                        data-aos-duration="1300"
-                        data-aos='fade-up'
-                        >#Доверие</Badge>
+                            targetId={'3'}
+                            data-aos-duration="1300"
+                            data-aos='fade-up'
+                            >#Доверие</Badge>
                         <Badge
-                        data-aos-duration="1400"
-                        data-aos='fade-up'
-                        >#ВЭД</Badge>
+                            targetId={'4'}
+                            data-aos-duration="1400"
+                            data-aos='fade-up'
+                            >#ВЭД</Badge>
                         <Badge
-                        data-aos-duration="1500"
-                        data-aos='fade-up'
-                        >#Наличные</Badge>
+                            targetId={'5'}
+                            data-aos-duration="1500"
+                            data-aos='fade-up'
+                            >#Наличные</Badge>
                         <Badge
-                        data-aos-duration="1600"
-                        data-aos='fade-up'
+                            targetId={'6'}
+                            data-aos-duration="1600"
+                            data-aos='fade-up'
                         >#Адрес</Badge>
                         <Badge
-                        data-aos-duration="1700"
-                        data-aos='fade-up'
-                        >#Контакты</Badge>
+                            targetId={'7'}
+                            data-aos-duration="1700"
+                            data-aos='fade-up'
+                            >#Контакты</Badge>
                         <Badge
-                        data-aos-duration="1800"
-                        data-aos='fade-up'
+                            targetId={'8'}
+                            data-aos-duration="1800"
+                            data-aos='fade-up'
                         >#Отзывы</Badge>
 
                     </div>

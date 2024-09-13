@@ -3,7 +3,7 @@ import about6 from '@/assets/svgs/about-6.svg'
 export const AboutPageSixthSection = () => {
     return (
         <>
-            <section className='aboutPage-sixth'>
+            <section id={'6'} className='aboutPage-sixth'>
                 <div className="aboutLeft">
                     <h2
                         data-aos-duration="1000"

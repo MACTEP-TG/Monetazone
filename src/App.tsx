@@ -8,6 +8,7 @@ import {Route, Routes} from "react-router-dom";
 import {AboutPage} from "./components/Pages/AboutPage/AboutPage.tsx";
 import {SwiftSepaPage} from "./components/Pages/SwiftSepaPage/SwiftSepaPage.tsx";
 import {ExchangerPage} from "./components/Pages/ExchangerPage/ExchangerPage.tsx";
+import {ScrollToTop} from "./components/utils/ScrollToTop.tsx";
 
 function App() {
     useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
             <Header />
 
             <main>
+                <ScrollToTop />
                 <Routes>
                     <Route path='*' element={<MainPage />} />
                     <Route path='/about' element={<AboutPage />} />

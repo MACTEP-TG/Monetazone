@@ -5,7 +5,7 @@ import {Button} from "../../UI/Buttons/Button/Button.tsx";
 export const AboutPageSeventhSection = () => {
     return (
         <>
-            <section className='aboutPage-seventh'>
+            <section id={'7'} className='aboutPage-seventh'>
                 <img data-aos-duration="1000"
                      data-aos='fade-right'
                      src={about7} alt=""/>
