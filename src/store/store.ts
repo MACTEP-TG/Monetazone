@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import {appPopUpReducer} from './appPopUpSlice';
+import {appPopUpReducer} from './appPopUpSlice.ts';
 
 export const store = configureStore({
     reducer: {
