@@ -3,7 +3,7 @@ import logo from '../../../../assets/svgs/logo.svg'
 import support from '@/assets/svgs/support.svg'
 import {Button} from "../../../UI/Buttons/Button/Button.tsx";
 import {NavLink} from "react-router-dom";
-import {showAppPopUp} from "../../../../store/AppPopUpSlice.ts";
+import {showAppPopUp} from "../../../../store/appPopUpSlice.ts";
 import {useDispatch} from "react-redux";
 
 
