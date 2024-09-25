@@ -1,0 +1,21 @@
+@import '@scss/_variables.scss';
+
+.input {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.3rem;
+
+  & input {
+
+  padding: 1rem;
+
+  border: 1px solid $blackColor;
+
+  border-radius: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+  }
+}

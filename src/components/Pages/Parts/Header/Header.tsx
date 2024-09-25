@@ -3,9 +3,18 @@ import logo from '../../../../assets/svgs/logo.svg'
 import support from '@/assets/svgs/support.svg'
 import {Button} from "../../../UI/Buttons/Button/Button.tsx";
 import {NavLink} from "react-router-dom";
+import {showAppPopUp} from "../../../../store/AppPopUpSlice.ts";
+import {useDispatch} from "react-redux";
 
 
 export const Header = () => {
+    const dispatch = useDispatch()
+
+    const onClick = () => {
+        dispatch(showAppPopUp())
+    }
+
+
     return (
         <>
             <header>
@@ -26,7 +35,10 @@ export const Header = () => {
                 <div className="menu">
                     <NavLink to='/exсhanger' className="mainColor">Онлайн обменник</NavLink>
                     <img className="pointer" src={support} alt="support icon"/>
-                    <Button>Создать заявку</Button>
+                    <Button
+                        isWide={false}
+                        onClick={onClick}
+                    >Создать заявку</Button>
                 </div>
             </header>
             <div className="header-padding"></div>

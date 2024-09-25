@@ -4,9 +4,13 @@ import './scss/basic.scss'
 import App from './App.tsx'
 import 'aos/dist/aos.css';
 import {BrowserRouter} from "react-router-dom";
+import {Provider} from "react-redux";
+import {store} from "./store/store.ts";
 
 createRoot(document.getElementById('root')!).render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+    <Provider store={store}>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </Provider>
 )

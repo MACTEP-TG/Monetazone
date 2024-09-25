@@ -1,0 +1,45 @@
+@import '@scss/_variables.scss';
+
+
+.application {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  justify-content: space-between;
+
+  & .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  & .bottom {
+    height: 100%;
+  }
+
+  & .right {
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: start;
+
+    & button.type {
+
+      padding: 0;
+
+      color: $grayColor;
+
+      &:hover {
+        color: $blackColor;
+      }
+
+      &.active {
+        color: $blackColor;
+      }
+    }
+  }
+}

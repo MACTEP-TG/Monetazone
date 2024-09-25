@@ -1,0 +1,47 @@
+@import '@scss/_variables.scss';
+
+
+.applicationBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  & .left {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    & a {
+      color: $mainColor;
+    }
+  }
+
+  & .right {
+    & button {
+      background: #E4EBF3;
+      color: #8E9FA8;
+
+      border: 1px solid #E4EBF3;
+
+      cursor: default;
+
+      &.checked {
+        background: $mainColor;
+        color: $whiteColor;
+
+        border: 1px solid $whiteColor;
+
+        cursor: pointer;
+
+        &:hover {
+          background: $whiteColor;
+          color: $mainColor;
+
+          border: 1px solid $mainColor;
+        }
+      }
+    }
+  }
+
+}

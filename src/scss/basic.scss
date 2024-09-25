@@ -17,6 +17,10 @@ html {
 
 }
 
+html.noOverflow {
+  overflow: hidden;
+}
+
 .page {
   padding: 0 8rem;
 }
