@@ -10,7 +10,7 @@ import {useDispatch} from "react-redux";
 export const Header = () => {
     const dispatch = useDispatch()
 
-    const onClick = () => {
+    const showApplicationPopUp = () => {
         dispatch(showAppPopUp())
     }
 
@@ -37,7 +37,7 @@ export const Header = () => {
                     <img className="pointer" src={support} alt="support icon"/>
                     <Button
                         isWide={false}
-                        onClick={onClick}
+                        onClick={showApplicationPopUp}
                     >Создать заявку</Button>
                 </div>
             </header>

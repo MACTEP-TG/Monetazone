@@ -1,7 +1,16 @@
 import main1 from "@/assets/svgs/main-1.svg";
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
+import {useDispatch} from "react-redux";
+import {showAppPopUp} from "../../../store/appPopUpSlice.ts";
 
 export const MainPageFirstSection = () => {
+    const dispatch = useDispatch()
+
+    const showApplicationPopUp = () => {
+        dispatch(showAppPopUp())
+    }
+
+
     return (
         <>
             <section className="mainPage-first">
@@ -14,6 +23,7 @@ export const MainPageFirstSection = () => {
 
                         <div className="buttons">
                             <Button
+                                onClick={showApplicationPopUp}
                                 data-aos-duration="1600"
                                 data-aos='fade-up'
                                 style={{borderBottomRightRadius: 0}}

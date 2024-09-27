@@ -2,9 +2,15 @@ import {Button} from "../../UI/Buttons/Button/Button.tsx";
 import main6 from "@/assets/svgs/main-6.svg";
 import {useState} from "react";
 import {useTypeEffect} from "../../../hooks/useTypeEffect.ts";
+import {useDispatch} from "react-redux";
+import {showAppPopUp} from "../../../store/appPopUpSlice.ts";
 
 export const MainPageSixthSection = () => {
+    const dispatch = useDispatch()
 
+    const showApplicationPopUp = () => {
+        dispatch(showAppPopUp())
+    }
 
     return (
         <>
@@ -18,6 +24,7 @@ export const MainPageSixthSection = () => {
                             data-aos-duration="1300" data-aos='fade-right'
                         >Создавайте первую заявку на сайте, после чего используйте наш telegram бот для консультаций, а так-же последующих сделок</p>
                         <Button
+                            onClick={showApplicationPopUp}
                             data-aos-duration="1600" data-aos='zoom-out'
                             isWide={true}
                         >Создать заявку сейчас</Button>

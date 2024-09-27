@@ -1,7 +1,16 @@
 import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
 import about4 from '@/assets/svgs/about-4.svg'
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
+import {useDispatch} from "react-redux";
+import {setAppType, showAppPopUp} from "../../../store/appPopUpSlice.ts";
 export const AboutPageFourthSection = () => {
+    const dispatch = useDispatch()
+
+    const showApplicationPopUp = () => {
+        dispatch(setAppType('fea'))
+        dispatch(showAppPopUp())
+    }
+
     return (
         <>
             <section id={'4'} className='aboutPage-fourth'>
@@ -31,6 +40,7 @@ export const AboutPageFourthSection = () => {
                     </p>
 
                     <Button
+                        onClick={showApplicationPopUp}
                         data-aos-duration="1800"
                         data-aos='fade-right'
                         isWide={true}>Создать заявку ВЭД</Button>

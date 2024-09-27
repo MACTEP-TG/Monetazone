@@ -4,10 +4,14 @@ import { FeaTypeApplication } from "../FeaTypeApplication/FeaTypeApplication.tsx
 import { SwiftTypeApplication } from "../SwiftTypeApplication/SwiftTypeApplication.tsx";
 import { CashTypeApplication } from "../CashTypeApplication/CashTypeApplication.tsx";
 import { useState } from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {setAppType} from "../../../store/appPopUpSlice.ts";
 
 
 export const Application = () => {
-    const [applicationType, setApplicationType] = useState<'fea' | 'swift' | 'cash'>('fea');
+    const dispatch = useDispatch()
+
+    const {applicationType} = useSelector(state => state.appPopUp)
 
     return (
         <ApplicationBody>
@@ -22,19 +26,19 @@ export const Application = () => {
                     <div className="right">
                         <button
                             className={applicationType === 'fea' ? 'active type' : 'type'}
-                            onClick={() => setApplicationType('fea')}
+                            onClick={() => dispatch(setAppType('fea'))}
                         >
                             ВЭД
                         </button>
                         <button
                             className={applicationType === 'swift' ? 'active type' : 'type'}
-                            onClick={() => setApplicationType('swift')}
+                            onClick={() => dispatch(setAppType('swift'))}
                         >
                             Swift/Sepa
                         </button>
                         <button
                             className={applicationType === 'cash' ? 'active type' : 'type'}
-                            onClick={() => setApplicationType('cash')}
+                            onClick={() => dispatch(setAppType('cash'))}
                         >
                             Cash
                         </button>

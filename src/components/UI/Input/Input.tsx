@@ -8,12 +8,12 @@ interface InputProps {
 }
 
 export const Input: FC<InputProps> = ({ label, type = 'text', placeholder}) => {
-    const name = useId()
+    const id = useId()
 
     return (
         <div className='input'>
-            <label htmlFor={name}>{label}</label>
-            <input type={type} id={name} name={name} placeholder={placeholder} />
+            <label htmlFor={id}>{label}</label>
+            <input type={type} id={id} name={id} placeholder={placeholder} />
         </div>
     )
 }

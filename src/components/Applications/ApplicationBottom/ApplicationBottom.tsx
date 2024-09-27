@@ -1,6 +1,8 @@
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
 import './applicationBottom.scss'
 import {useState} from "react";
+import {useDispatch} from "react-redux";
+import {hideAppPopUp} from "../../../store/appPopUpSlice.ts";
 
 
 export const ApplicationBottom = () => {
@@ -8,6 +10,12 @@ export const ApplicationBottom = () => {
 
     const toggleCheckbox = () => {
         setIsChecked(prev => !prev)
+    }
+
+    const dispatch = useDispatch()
+
+    const hidePopUp = () => {
+        dispatch(hideAppPopUp())
     }
 
     return (
@@ -22,9 +30,9 @@ export const ApplicationBottom = () => {
             <div className="right">
                 {
                     isChecked ?
-                        <Button  className='checked' type='invert' isWide={true}>Создать заявку</Button>
+                        <Button onClick={hidePopUp} className='checked' type='invert' isWide={true}>Создать заявку</Button>
                         :
-                        <Button  type='invert' isWide={true}>Создать заявку</Button>
+                        <Button type='invert' isWide={true}>Создать заявку</Button>
                 }
 
             </div>

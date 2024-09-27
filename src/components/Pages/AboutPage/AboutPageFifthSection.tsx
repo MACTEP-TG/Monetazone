@@ -1,8 +1,17 @@
 import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
 import about5 from '@/assets/svgs/about-5.svg'
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
+import {useDispatch} from "react-redux";
+import {setAppType, showAppPopUp} from "../../../store/appPopUpSlice.ts";
 
 export const AboutPageFifthSection = () => {
+    const dispatch = useDispatch()
+
+    const showApplicationPopUp = () => {
+        dispatch(setAppType('cash'))
+        dispatch(showAppPopUp())
+    }
+
     return (
         <>
             <section id={'5'} className='aboutPage-fifth'>
@@ -38,6 +47,7 @@ export const AboutPageFifthSection = () => {
 
                     <div className='buttons'>
                         <Button
+                            onClick={showApplicationPopUp}
                             data-aos-duration="1800"
                             data-aos='fade-left'
                             isWide={true}>Создать заявку наличные</Button>

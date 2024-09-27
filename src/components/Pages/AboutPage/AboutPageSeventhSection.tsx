@@ -1,8 +1,14 @@
 import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
 import about7 from '@/assets/svgs/about-7.svg'
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
+import {useDispatch} from "react-redux";
+import {showAppPopUp} from "../../../store/appPopUpSlice.ts";
 
 export const AboutPageSeventhSection = () => {
+    const dispatch = useDispatch()
+    const showApplicationPopUp = () => {
+        dispatch(showAppPopUp())
+    }
     return (
         <>
             <section id={'7'} className='aboutPage-seventh'>
@@ -56,6 +62,7 @@ export const AboutPageSeventhSection = () => {
                         не дожидаясь ответа.</p>
 
                     <Button
+                        onClick={showApplicationPopUp}
                         data-aos-duration="2400"
                         data-aos='fade-left'
                         isWide={true}>
