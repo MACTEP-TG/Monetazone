@@ -26,9 +26,9 @@ export const Header = () => {
                     <ul>
                         <li><NavLink to='/about'>О нас</NavLink></li>
                         <li><a>ВЭД</a></li>
-                        <li><NavLink to='swiftsepa' className="flex">Swift<span>&</span>Sepa</NavLink></li>
+                        <li><NavLink to='/swiftsepa' className="flex">Swift<span>&</span>Sepa</NavLink></li>
                         <li><a>Обмен</a></li>
-                        <li><a>Выдача наличных</a></li>
+                        <li><NavLink to='/withdraw'>Выдача наличных</NavLink></li>
                     </ul>
                 </nav>
 

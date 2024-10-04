@@ -11,8 +11,8 @@ import {ExchangerPage} from "./components/Pages/ExchangerPage/ExchangerPage.tsx"
 import {ScrollToTop} from "./components/utils/ScrollToTop.tsx";
 import {PopUp} from "./components/UI/PopUps/PopUp.tsx";
 import {Application} from "./components/Applications/Application/Application.tsx";
-import {useSelector} from "react-redux";
 import {useAppSelector} from "./store/hooks.ts";
+import {WithdrawPage} from "./components/Pages/WithdrawPage/WithdrawPage.tsx";
 
 function App() {
     useEffect(() => {
@@ -35,10 +35,11 @@ function App() {
                 <main>
                     <ScrollToTop/>
                     <Routes>
-                        <Route path='*' element={<MainPage/>}/>
-                        <Route path='/about' element={<AboutPage/>}/>
-                        <Route path='/swiftsepa' element={<SwiftSepaPage/>}/>
-                        <Route path='/exсhanger' element={<ExchangerPage/>}/>
+                        <Route path='*' element={<MainPage/>} />
+                        <Route path='/about' element={<AboutPage/>} />
+                        <Route path='/swiftsepa' element={<SwiftSepaPage/>} />
+                        <Route path='/exсhanger' element={<ExchangerPage/>} />
+                        <Route path='/withdraw' element={<WithdrawPage />} />
                     </Routes>
                 </main>
                 <Footer/>

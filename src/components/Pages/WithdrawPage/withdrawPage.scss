@@ -1,0 +1,98 @@
+@import '@scss/_variables.scss';
+
+.WPRight {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+
+  text-align: end;
+
+  width: 100%;
+}
+
+.WPLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+
+  text-align: start;
+
+  width: 100%;
+}
+
+.withdrawPage {
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+
+  & img {
+    width: 40rem;
+  }
+
+  section.WP-first {
+    height: calc(100vh - 60px);
+
+    & .body {
+      & h1 {
+        & span {
+          font-size: $h1FS;
+        }
+      }
+      & .badges {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 0.2rem;
+
+        text-align: center;
+      }
+
+      & .guide {
+        text-align: end;
+      }
+    }
+  }
+  section.WP-second {
+    & img {
+      width: 35rem;
+    }
+
+  }
+  section.WP-third {
+    & img {
+      width: 35rem;
+    }
+
+  }
+  section.WP-fourth {
+    & img {
+      width: 35rem;
+    }
+
+  }
+  section.WP-fifth {
+    & img {
+      width: 40rem;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: column;
+
+      gap: 0.3rem;
+
+      & .badges {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+  }
+}
