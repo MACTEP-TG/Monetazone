@@ -3,12 +3,13 @@ import {ApplicationBottom} from "../ApplicationBottom/ApplicationBottom.tsx";
 import {Input} from "../../UI/Input/Input.tsx";
 import {Select} from "../../UI/Select/Select.tsx";
 import {useState} from "react";
+import {DatePicker} from "@/components/UI/DatePicker/DatePicker.tsx";
 
 export const FeaTypeApplication = () => {
     const [typeOfService, setTypeOfService] = useState('')
     const [office, setOffice] = useState('')
 
-
+//<Input label='*Дата сделки' placeholder='Введите дату сделки' />
     return (
         <div className='feaTypeApplication'>
 
@@ -19,7 +20,7 @@ export const FeaTypeApplication = () => {
                 <Input label='*Юрисдикция нахождения средств' placeholder='Введите юрисдикцию нахождения средств' />
                 <Select label='*Офис' placeholder='Выберите удобный для вас офис' options={['Moscow City, Башня Федерация', 'Южное Тушино, Строительный проезд 7а']} setOption={setOffice}/>
                 <Input label='*Юрисдикция зачисления средств' placeholder='Введите юрисдикцию зачисления средств' />
-                <Input label='*Дата сделки' placeholder='Введите дату сделки' />
+                <DatePicker className='DatePicker'/>
 
                 <div className="two">
                     <Input label='*Сумма' placeholder='Введите сумму' />

@@ -2,6 +2,7 @@ import './exchangerPage.scss'
 import exchangerLogo from '@/assets/svgs/exchanger-logo.svg'
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
 import {NavLink} from "react-router-dom";
+import {DatePicker} from "@/components/UI/DatePicker/DatePicker.tsx";
 
 export const ExchangerPage = () => {
     return (
@@ -16,6 +17,12 @@ export const ExchangerPage = () => {
 
             <img src={exchangerLogo} alt="Yan Hait and Monetazone"/>
 
-            <Button isWide={true}><NavLink to='/'>Вернуться на главную страницу</NavLink></Button>
+            <NavLink to='/'>
+                <Button isWide={true}><NavLink to='/'>Вернуться на главную страницу</NavLink></Button>
+            </NavLink>
+
+            <DatePicker />
+
+
         </section>)
 }
