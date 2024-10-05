@@ -4,8 +4,6 @@ export const CashTypeApplication = () => {
     return (
         <>
             <h1>Cash</h1>
-
-
             <ApplicationBottom />
         </>
     )

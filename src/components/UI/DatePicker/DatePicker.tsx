@@ -9,7 +9,7 @@ import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from "@/components/ui/popover"
+} from "@/components/UI/popover"
 import {useState} from "react";
 
 export const DatePicker = () => {
