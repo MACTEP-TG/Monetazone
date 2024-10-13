@@ -27,7 +27,8 @@ export const MainPageFourthSection = () => {
 
                     <Button
                         isWide={true}
-                        data-aos-duration="1100" data-aos='fade-down-right'>Гео выдачи наличных</Button>
+                        data-aos-duration="1100" data-aos='fade-down-right'>Гео выдачи наличных
+                    </Button>
                 </div>
 
                 <img

@@ -1,42 +1,52 @@
-import { format } from "date-fns"
-import { Calendar as CalendarIcon } from "lucide-react"
+import { format} from "date-fns"
+import { ru } from "date-fns/locale";
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/UI/Button"
 import { Calendar } from "@/components/UI/Calendar"
 
+import './datePicker.scss'
+
 import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from "@/components/UI/popover"
-import {useState} from "react";
+} from "@/components/UI/Popover"
+import {useId, useState} from "react";
 
-export const DatePicker = () => {
+export const DatePicker = ({label}) => {
     const [date, setDate] = useState<Date>()
+    const id = useId()
 
     return (
-        <Popover>
-            <PopoverTrigger asChild>
-                <Button
-                    variant={"outline"}
-                    className={cn(
-                        "w-[280px] justify-start text-left font-normal",
-                        !date && "text-muted-foreground"
-                    )}
-                >
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    {date ? format(date, "PPP") : <span>Pick a date</span>}
-                </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-auto p-0">
-                <Calendar
-                    mode="single"
-                    selected={date}
-                    onSelect={setDate}
-                    initialFocus
-                />
-            </PopoverContent>
-        </Popover>
+        <>
+            <div className="datePicker">
+                <label htmlFor={id}>{label}</label>
+
+                <Popover>
+                    <PopoverTrigger asChild>
+                        <Button
+                            variant="datePicker"
+                            size='datePicker'
+                            className={cn(
+                                "w-full justify-start text-left font-normal"
+                            )}
+                        >
+                            {date ? format(date, "d MMMM yyyy", { locale: ru }) : <p>Выберите дату сделки</p>}
+                        </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0 z-50">
+                        <Calendar
+                            mode="single"
+                            selected={date}
+                            onSelect={setDate}
+                            initialFocus
+                        />
+                    </PopoverContent>
+                </Popover>
+
+            </div>
+        </>
+
     )
 }

@@ -20,9 +20,5 @@ export const ExchangerPage = () => {
             <NavLink to='/'>
                 <Button isWide={true}><NavLink to='/'>Вернуться на главную страницу</NavLink></Button>
             </NavLink>
-
-            <DatePicker />
-
-
         </section>)
 }

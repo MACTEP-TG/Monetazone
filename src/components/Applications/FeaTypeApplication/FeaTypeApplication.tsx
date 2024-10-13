@@ -20,7 +20,7 @@ export const FeaTypeApplication = () => {
                 <Input label='*Юрисдикция нахождения средств' placeholder='Введите юрисдикцию нахождения средств' />
                 <Select label='*Офис' placeholder='Выберите удобный для вас офис' options={['Moscow City, Башня Федерация', 'Южное Тушино, Строительный проезд 7а']} setOption={setOffice}/>
                 <Input label='*Юрисдикция зачисления средств' placeholder='Введите юрисдикцию зачисления средств' />
-                <DatePicker className='DatePicker'/>
+                <DatePicker label='*Дата сделки' className='DatePicker'/>
 
                 <div className="two">
                     <Input label='*Сумма' placeholder='Введите сумму' />

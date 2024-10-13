@@ -8,7 +8,7 @@ import {Route, Routes} from "react-router-dom";
 import {AboutPage} from "./components/Pages/AboutPage/AboutPage.tsx";
 import {SwiftSepaPage} from "./components/Pages/SwiftSepaPage/SwiftSepaPage.tsx";
 import {ExchangerPage} from "./components/Pages/ExchangerPage/ExchangerPage.tsx";
-import {ScrollToTop} from "./components/utils/ScrollToTop.tsx";
+import {ScrollToTop} from "@/components/Utils/ScrollToTop.tsx";
 import {PopUp} from "./components/UI/PopUps/PopUp.tsx";
 import {Application} from "./components/Applications/Application/Application.tsx";
 import {useAppSelector} from "./store/hooks.ts";

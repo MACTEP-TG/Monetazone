@@ -5,6 +5,7 @@ import {WPFourthSection} from "./WPFourthSection.tsx";
 import {WPSecondSection} from "./WPSecondSection.tsx";
 import {WPThirdSection} from "./WPThirdSection.tsx";
 import {WPFifthSection} from "./WPFifthSection.tsx";
+import {WPContriesSection} from "@/components/Pages/WithdrawPage/WPContriesSection.tsx";
 
 export const WithdrawPage: FC = () => {
     return (
@@ -14,6 +15,7 @@ export const WithdrawPage: FC = () => {
             <WPThirdSection />
             <WPFourthSection />
             <WPFifthSection />
+            <WPContriesSection />
         </div>
     )
 }

@@ -18,7 +18,7 @@ export const Button: FC<ButtonType> = ({children, type= 'basic', isWide= false, 
             otherProps.className ||= 'transparent'
              break;
         case 'invert':
-            otherProps.className ||= 'invert'
+            otherProps.className ||= 'invertBtn'
             break;
         case 'white':
             otherProps.className ||= 'white'

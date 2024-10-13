@@ -20,7 +20,8 @@ export const MainPageFifthSection = () => {
                             data-aos-duration="2000" data-aos='zoom-out'
                             isWide={true}
                             type='invert'
-                        >Совершить перестановку</Button>
+                        >Совершить перестановку
+                        </Button>
                     </div>
                 </div>
 

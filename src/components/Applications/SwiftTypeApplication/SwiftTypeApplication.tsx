@@ -1,6 +1,7 @@
 import {ApplicationBottom} from "../ApplicationBottom/ApplicationBottom.tsx";
 import {Input} from "../../UI/Input/Input.tsx";
 import './swiftTypeApplication.scss'
+import {DatePicker} from "@/components/UI/DatePicker/DatePicker.tsx";
 
 export const SwiftTypeApplication = () => {
     return (
@@ -13,7 +14,7 @@ export const SwiftTypeApplication = () => {
                 <Input label='*Валюта на сделке' placeholder='Выберите валюту на сделку' />
                 <Input label='*Офис' placeholder='Выберите удобный для вас офис' />
                 <Input label='*Страна зачисления' placeholder='Укажите страну зачисления' />
-                <Input label='*Дата сделки' placeholder='Выберите дату сделки' />
+                <DatePicker label='*Дата сделки' className='DatePicker'/>
 
 
                 <div className="two">

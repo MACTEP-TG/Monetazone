@@ -3,9 +3,8 @@ import './application.scss';
 import { FeaTypeApplication } from "../FeaTypeApplication/FeaTypeApplication.tsx";
 import { SwiftTypeApplication } from "../SwiftTypeApplication/SwiftTypeApplication.tsx";
 import { CashTypeApplication } from "../CashTypeApplication/CashTypeApplication.tsx";
-import { useState } from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {setAppType} from "../../../store/appPopUpSlice.ts";
+import {setAppType} from "@/store/appPopUpSlice.ts";
 
 
 export const Application = () => {
