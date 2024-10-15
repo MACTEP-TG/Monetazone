@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import {appPopUpReducer} from './appPopUpSlice.ts';
+import {countriesReducer} from "@/store/countriesSlice.ts";
 
 export const store = configureStore({
     reducer: {
         appPopUp: appPopUpReducer,
+        countries: countriesReducer
     },
 });
 

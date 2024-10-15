@@ -7,7 +7,7 @@ interface InputProps {
     placeholder?: string;
 }
 
-export const Input: FC<InputProps> = ({ label, type = 'text', placeholder}) => {
+export const Input: FC<InputProps> = ({ label, type = 'text', placeholder, children}) => {
     const id = useId()
 
     return (

@@ -1,8 +1,33 @@
 import svg from '@/assets/svgs/withdraw-5.svg'
 import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
-import {Input} from "../../UI/Input/Input.tsx";
+import arrow from '@/assets/svgs/countries-arrow.svg';
+import {NoLabelInput} from "@/components/UI/Input/NoLabelInput.tsx";
+import {useEffect, useState} from "react";
+import {useAppDispatch, useAppSelector} from "@/store/hooks.ts";
+import {countries} from "@/utils/countries.ts";
+import {updateCurrentCountries} from "@/store/countriesSlice.ts";
 
 export const WPFifthSection = () => {
+
+    const dispatch = useAppDispatch()
+
+    const [inputValue, setInputValue] = useState('')
+
+    useEffect(() => {
+        const newFilteredCountries = countries.filter(({name, flagSVG}) => {
+                return (
+                    name.toLowerCase().includes(inputValue.toLowerCase())
+                ||
+                        flagSVG.toLowerCase().includes(inputValue.toLowerCase())
+                )
+        }
+        )
+
+        console.log(newFilteredCountries)
+        dispatch(updateCurrentCountries(newFilteredCountries))
+
+    }, [inputValue, dispatch])
+
     return (
         <>
             <section className="WP-fifth">
@@ -20,7 +45,7 @@ export const WPFifthSection = () => {
                     <div className="services">
                         <p
                             data-aos-duration="1400" data-aos='fade-left'
-                        >В каждой стране и городе<br />
+                        >В каждой стране и городе<br/>
                             из списка есть два вида услуг:
                         </p>
 
@@ -33,15 +58,16 @@ export const WPFifthSection = () => {
                             >#Прием</Badge>
                         </div>
 
-                    </div>
+                        <p>А так же список валют которые <br/>
+                            мы выдаем и принимаем в каждой <br/>
+                            стране и городе из списка
+                        </p>
 
-                    <div
-                        data-aos-duration="2000" data-aos='fade-left'
-                        className="input">
-                        <p>А так же список валют которые <br />
-                            мы выдаем и принимаем в каждой <br />
-                            стране и городе из списка</p>
-                        <Input label='' />
+                        <NoLabelInput value={inputValue}
+                                      setValue={setInputValue}
+                                      label='' placeholder='Введите в поиск страну'>
+                            <img src={arrow} alt=""/>
+                        </NoLabelInput>
                     </div>
                 </div>
             </section>

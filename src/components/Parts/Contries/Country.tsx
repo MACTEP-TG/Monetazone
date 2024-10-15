@@ -3,6 +3,8 @@ import {Currencies} from "@/components/Parts/Contries/Currencies.tsx";
 import {FC} from "react";
 import {Badge} from "@/components/UI/Badges/Badge/Badge.tsx";
 import {Button} from "@/components/UI/Buttons/Button/Button.tsx";
+import {flagIcons} from "@/flagIcons.ts";
+
 
 type CountryType = {
     name: string,
@@ -14,15 +16,15 @@ type CountryType = {
 }
 
 export const Country:FC<CountryType> = ({name, flagSVG, issue, intake, cities, currencies}) => {
+
     return (
         <>
-
             <div className="country">
 
                 <div className="top">
                     <div className="left">
                         <h2>{name}</h2>
-                        <img src={flagSVG} alt=""/>
+                        <img src={flagIcons[flagSVG]} alt=""/>
                     </div>
 
                     <div className="right">

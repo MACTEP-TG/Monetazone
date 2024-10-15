@@ -16,6 +16,33 @@
 
   &:focus {
     outline: none;
+  }}
+}
+
+.noLabelInput {
+
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  & .children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    position: absolute;
+
+    right: 5%;
+    top: 30%;
+
+    cursor: pointer;
   }
+
+  & input {
+    width: 100%;
   }
 }
