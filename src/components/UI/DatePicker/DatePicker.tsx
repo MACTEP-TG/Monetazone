@@ -32,7 +32,7 @@ export const DatePicker = ({label}) => {
                                 "w-full justify-start text-left font-normal"
                             )}
                         >
-                            {date ? format(date, "d MMMM yyyy", { locale: ru }) : <p>Выберите дату сделки</p>}
+                            {date ? format(date, "d MMMM yyyy", { locale: ru }) : <p className='gray'>Выберите дату сделки</p>}
                         </Button>
                     </PopoverTrigger>
                     <PopoverContent className="w-auto p-0 z-50">

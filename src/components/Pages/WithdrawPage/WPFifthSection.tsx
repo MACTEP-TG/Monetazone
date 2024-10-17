@@ -3,7 +3,7 @@ import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
 import arrow from '@/assets/svgs/countries-arrow.svg';
 import {NoLabelInput} from "@/components/UI/Input/NoLabelInput.tsx";
 import {useEffect, useState} from "react";
-import {useAppDispatch, useAppSelector} from "@/store/hooks.ts";
+import {useAppDispatch} from "@/store/hooks.ts";
 import {countries} from "@/utils/countries.ts";
 import {updateCurrentCountries} from "@/store/countriesSlice.ts";
 
@@ -58,12 +58,15 @@ export const WPFifthSection = () => {
                             >#Прием</Badge>
                         </div>
 
-                        <p>А так же список валют которые <br/>
+                        <p
+                            data-aos-duration="1800" data-aos='fade-left'
+                        >А так же список валют которые <br/>
                             мы выдаем и принимаем в каждой <br/>
                             стране и городе из списка
                         </p>
 
                         <NoLabelInput value={inputValue}
+                                      data-aos-duration="2000" data-aos='fade-left'
                                       setValue={setInputValue}
                                       label='' placeholder='Введите в поиск страну'>
                             <img src={arrow} alt=""/>

@@ -48,7 +48,9 @@
 
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
+
         gap: 0.2rem;
+        row-gap: 0.8rem;
 
         text-align: center;
       }

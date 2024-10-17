@@ -5,7 +5,7 @@ import './countries.scss'
 export const Countries = ({countries}) => {
     return (
         <>
-        <div className="countries">
+        <div className="countries lastSection">
             {countries.map((country) => {
                 return (
                     <>

@@ -16,6 +16,7 @@ import kazakhstan from './assets/svgs/flags/kazakhstan.svg';
 import kyrgyzstan from './assets/svgs/flags/kyrgyzstan.svg';
 import canada from './assets/svgs/flags/canada.svg';
 import cyprus from './assets/svgs/flags/cyprus.svg';
+import north_cyprus from './assets/svgs/flags/north_cyprus.svg'
 import china from './assets/svgs/flags/china.svg';
 import latvia from './assets/svgs/flags/latvia.svg';
 import lithuania from './assets/svgs/flags/lithuania.svg';
@@ -39,10 +40,6 @@ import sweden from './assets/svgs/flags/sweden.svg';
 import estonia from './assets/svgs/flags/estonia.svg';
 import south_korea from './assets/svgs/flags/south_korea.svg';
 
-import nazi from './assets/svgs/flags/nazi.svg';
-
-//it's just a joke guys don't be soooo serious)))
-
 export const flagIcons = {
     austria,
     azerbaijan,
@@ -62,6 +59,7 @@ export const flagIcons = {
     kyrgyzstan,
     canada,
     cyprus,
+    north_cyprus,
     china,
     latvia,
     lithuania,
@@ -83,9 +81,5 @@ export const flagIcons = {
     switzerland,
     sweden,
     estonia,
-    south_korea,
-
-
-    nazi
-    // :)
+    south_korea
 };

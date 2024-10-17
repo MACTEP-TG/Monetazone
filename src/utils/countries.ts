@@ -145,7 +145,7 @@ export const countries = [
     },
     {
         name: 'Кипр Север',
-        flagSVG: 'cyprus',
+        flagSVG: 'north_cyprus',
         cities: ['Никосия'],
         currencies: ['Доллар', 'Евро'],
         issue: true,
