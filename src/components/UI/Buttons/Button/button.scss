@@ -78,4 +78,24 @@ button {
     }
 
   }
+  &.whiteBrd {
+    background: $whiteColor;
+
+    color: $blackColor;
+
+    border: 1px solid $blackColor;
+
+    & div {
+      transition-duration: .3s;
+    }
+
+    &:hover {
+      background: $blackColor;
+      color: $whiteColor;
+
+      & div {
+        color: $whiteColor !important;
+      }
+    }
+  }
 }

@@ -19,7 +19,10 @@ export const Country:FC<CountryType> = ({name, flagSVG, issue, intake, cities, c
 
     return (
         <>
-            <div className="country">
+            <div className="country"
+                 data-aos-duration="1000"
+                 data-aos='zoom-in'
+            >
 
                 <div className="top">
                     <div className="left">

@@ -18,7 +18,7 @@ export const ExchangerPage = () => {
             <img src={exchangerLogo} alt="Yan Hait and Monetazone"/>
 
             <NavLink to='/'>
-                <Button isWide={true}><NavLink to='/'>Вернуться на главную страницу</NavLink></Button>
+                <Button type='whiteBrd' isWide={true}><NavLink to='/'>Вернуться на главную страницу</NavLink></Button>
             </NavLink>
         </section>)
 }

@@ -8,7 +8,7 @@ type ButtonType = {
     isWide: boolean
 }
 
-export const Button: FC<ButtonType> = ({children, type= 'basic', isWide= false, ...otherProps}) => {
+export const Button: FC<ButtonType> = ({children, type = 'basic', isWide= false, ...otherProps}) => {
 
     switch (type) {
         case 'basic':
@@ -22,6 +22,9 @@ export const Button: FC<ButtonType> = ({children, type= 'basic', isWide= false, 
             break;
         case 'white':
             otherProps.className ||= 'white'
+            break;
+        case 'whiteBrd':
+            otherProps.className ||= 'whiteBrd'
             break;
     }
 

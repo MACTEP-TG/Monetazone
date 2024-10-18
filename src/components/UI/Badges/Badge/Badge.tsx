@@ -14,7 +14,9 @@ export const Badge:FC<BadgeType> = ({children, targetId = null, ...otherProps}) 
 
     return (
         <>
-            <p {...otherProps} onClick={onClick} className='badge pointer'>{children}</p>
+            <p
+                {...otherProps} onClick={onClick} className='badge pointer'>{children}
+            </p>
         </>
     )
 }
