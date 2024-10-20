@@ -88,3 +88,40 @@ p {
 .DatePicker {
   z-index: 100000;
 }
+
+.input.empty-red {
+  & label {
+    color: $redColor;
+  }
+
+  & input {
+    border-color: $redColor;
+  }
+}
+
+.select.empty-red {
+
+  & .body {
+    border-color: $redColor;
+
+    & .list {
+      li {
+        border-color: $redColor;
+      }
+    }
+  }
+
+  & .label {
+    color: $redColor;
+  }
+}
+
+.datePicker.empty-red {
+  & button {
+    border-color: $redColor;
+  }
+
+  & label {
+    color: $redColor;
+  }
+}

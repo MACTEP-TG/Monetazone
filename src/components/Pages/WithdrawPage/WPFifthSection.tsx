@@ -22,15 +22,13 @@ export const WPFifthSection = () => {
                 )
         }
         )
-
-        console.log(newFilteredCountries)
         dispatch(updateCurrentCountries(newFilteredCountries))
 
     }, [inputValue, dispatch])
 
     return (
         <>
-            <section className="WP-fifth">
+            <section id='5' className="WP-fifth">
                 <img
                     data-aos-duration="1000" data-aos='fade-right'
                     src={svg} alt=""/>

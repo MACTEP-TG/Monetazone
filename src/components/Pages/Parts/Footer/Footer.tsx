@@ -4,6 +4,7 @@ import blackArrow from '@/assets/svgs/black-arrow.svg'
 import footerLogo from '@/assets/svgs/footer-logo.svg'
 
 import './footer.scss'
+import {NavLink} from "react-router-dom";
 
 export const Footer = () => {
     return (
@@ -15,10 +16,10 @@ export const Footer = () => {
                             <h3 className='bold'>Организация</h3>
                             <img src={whiteArrow} alt=""/>
                         </div>
-                        <a href="">О нас</a>
-                        <a href="">Гео нашей работы</a>
-                        <a href="">Адрес офиса</a>
-                        <a href="">Отзывы нашей компании</a>
+                        <NavLink to='/about'>О нас</NavLink>
+                        <NavLink to='/'>Гео нашей работы</NavLink>
+                        <NavLink to='/'>Адрес офиса</NavLink>
+                        <NavLink to='/'>Отзывы нашей компании</NavLink>
                     </div>
 
                     <div className="column">
@@ -26,8 +27,8 @@ export const Footer = () => {
                             <h3 className='bold'>Онлайн платежи</h3>
                             <img src={whiteArrow} alt=""/>
                         </div>
-                        <a href="">Swift / Sepa переводы</a>
-                        <a href="">ВЭД</a>
+                        <NavLink to='/swiftsepa'>Swift / Sepa переводы</NavLink>
+                        <NavLink to=''>ВЭД</NavLink>
                     </div>
 
                     <div className="column">
@@ -35,8 +36,8 @@ export const Footer = () => {
                             <h3 className='bold'>Наличные</h3>
                             <img src={whiteArrow} alt=""/>
                         </div>
-                        <a href="">Выдача наличных</a>
-                        <a href="">Обмен валюты</a>
+                        <NavLink to='/withdraw'>Выдача наличных</NavLink>
+                        <NavLink to=''>Обмен валюты</NavLink>
                     </div>
 
                     <div className="column">

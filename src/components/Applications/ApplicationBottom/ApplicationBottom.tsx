@@ -5,17 +5,14 @@ import {useDispatch} from "react-redux";
 import {hideAppPopUp} from "@/store/appPopUpSlice.ts";
 
 
-export const ApplicationBottom = () => {
+export const ApplicationBottom = ({submitForm}) => {
     const [isChecked, setIsChecked] = useState(false)
-
-    const toggleCheckbox = () => {
-        setIsChecked(prev => !prev)
-    }
 
     const dispatch = useDispatch()
 
-    const hidePopUp = () => {
-        dispatch(hideAppPopUp())
+    const toggleCheckbox = () => {
+        setIsChecked(prev => !prev)
+
     }
 
     return (
@@ -28,9 +25,10 @@ export const ApplicationBottom = () => {
                 <p>Соглашаюсь с <a href='https://google.com'>условиями сервиса</a></p>
             </div>
             <div className="right">
+
                 {
                     isChecked ?
-                        <Button onClick={hidePopUp} className='checked' type='basic' isWide={true}>Создать заявку</Button>
+                        <Button onClick={submitForm} className='checked' type='basic' isWide={true}>Создать заявку</Button>
                         :
                         <Button type='basic' isWide={true}>Создать заявку</Button>
                 }

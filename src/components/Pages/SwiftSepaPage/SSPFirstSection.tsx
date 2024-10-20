@@ -21,7 +21,9 @@ export const SSPFirstSection = () => {
                         по всему миру!<br />
                     </h1>
 
-                    <div className="badges">
+                    <div className="badges"
+                         data-aos-duration="1400" data-aos='fade-left'
+                    >
                         <Badge
                             data-aos-duration="1100"
                             data-aos='fade-up'

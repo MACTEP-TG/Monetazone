@@ -1,4 +1,4 @@
-import {FC, useState, useRef, useEffect} from "react";
+import {FC, useState, useRef, useEffect, forwardRef} from "react";
 import './select.scss'
 import arrowRight from '@/assets/svgs/arrow-right.svg';
 import arrowBottom from '@/assets/svgs/arrow-bottom.svg';
@@ -9,15 +9,15 @@ type SelectType = {
     placeholder: string
     options: string []
     setOption: any
+    option: string
 }
 
-export const Select: FC<SelectType> = ({ options, placeholder = "Select an option" , label}) => {
+export const Select: FC<SelectType> = forwardRef(({options, placeholder = "Выберите" , label, setOption, option}, ref) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState(null);
     const dropdownRef = useRef(null);
 
     const handleOptionClick = (option) => {
-        setSelectedOption(option);
+        setOption(option);
         setIsOpen(false);
     };
 
@@ -40,11 +40,11 @@ export const Select: FC<SelectType> = ({ options, placeholder = "Select an optio
     }, []);
 
     return (
-        <div className='select'>
+        <div ref={ref} className='select'>
             <div className="label">{label}</div>
             <div className="body" ref={dropdownRef}>
                 <div className="top" onClick={toggleDropdown}>
-                    {selectedOption ? selectedOption : placeholder}
+                    {option ? option : placeholder}
                     {isOpen ?
                         <img src={arrowBottom} alt="arrow"/>
                         :
@@ -57,7 +57,7 @@ export const Select: FC<SelectType> = ({ options, placeholder = "Select an optio
                         {options.map((option) => (
                             <li
                                 key={option}
-                                className={`dropdown-item ${option === selectedOption ? "selected" : ""}`}
+                                className={`dropdown-item ${option === option ? "selected" : ""}`}
                                 onClick={() => handleOptionClick(option)}
                             >
                                 {option}
@@ -67,6 +67,5 @@ export const Select: FC<SelectType> = ({ options, placeholder = "Select an optio
                 )}
             </div>
         </div>
-
-    );
-};
+    )
+})

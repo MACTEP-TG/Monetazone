@@ -12,15 +12,20 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/UI/Popover"
-import {useId, useState} from "react";
+import {forwardRef, useId, useState} from "react";
 
-export const DatePicker = ({label}) => {
-    const [date, setDate] = useState<Date>()
+type DatePickerType = {
+    label: string
+    date: Date
+    setDate: any
+}
+
+export const DatePicker = forwardRef(({label, date, setDate}, ref) => {
     const id = useId()
 
     return (
         <>
-            <div className="datePicker">
+            <div ref={ref} className="datePicker">
                 <label htmlFor={id}>{label}</label>
 
                 <Popover>
@@ -49,4 +54,4 @@ export const DatePicker = ({label}) => {
         </>
 
     )
-}
+})

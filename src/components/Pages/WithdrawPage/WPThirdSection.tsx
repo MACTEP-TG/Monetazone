@@ -5,7 +5,7 @@ import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
 export const WPThirdSection = () => {
 
     return (
-        <section className='WP-third'>
+        <section id='3' className='WP-third'>
             <img
                 data-aos-duration="1000" data-aos='fade-right'
                 src={svg} alt=""/>

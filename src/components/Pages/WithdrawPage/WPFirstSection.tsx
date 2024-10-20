@@ -11,8 +11,10 @@ export const WPFirstSection = () => {
             <div className="body WPRight">
 
                 <h1
-                    data-aos-duration="1200" data-aos='fade-left'
-                >Переводите наличные<br/>
+                    data-aos-duration="1200"
+                    data-aos='fade-left'>
+
+                    Переводите наличные<br/>
                     в 40+ странах мира<br/>
                     с помощью<br/>
                     Yan Hait <span>&</span> Monetazone
@@ -21,18 +23,12 @@ export const WPFirstSection = () => {
                 <div
                     data-aos-duration="1400" data-aos='fade-left'
                     className="badges">
-                    <Badge
-                        data-aos-duration="1100" data-aos='fade-up'
-                        targetId='1'>#Доставка</Badge>
-                    <Badge
-                        data-aos-duration="1200" data-aos='fade-up'
-                        targetId='1'>#Резервы</Badge>
-                    <Badge
-                        data-aos-duration="1300" data-aos='fade-up'
-                        targetId='1'>#Чистота</Badge>
-                    <Badge
-                        data-aos-duration="1400" data-aos='fade-up'
-                        targetId='1'>#Приём</Badge>
+
+                    <Badge targetId='2'>#Доставка</Badge>
+                    <Badge targetId='3'>#Резервы</Badge>
+                    <Badge targetId='4'>#Чистота</Badge>
+                    <Badge targetId='5'>#Выдача/Приём</Badge>
+
                 </div>
 
                 <div

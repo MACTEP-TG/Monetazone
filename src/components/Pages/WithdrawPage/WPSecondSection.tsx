@@ -4,7 +4,7 @@ import svg from '@/assets/svgs/withdraw-2.svg'
 export const WPSecondSection = () => {
     return (
         <>
-            <section className='WP-second'>
+            <section id='2' className='WP-second'>
                 <div className="WPLeft">
                     <h2
                         data-aos-duration="1000" data-aos='fade-right'

@@ -1,7 +1,6 @@
 import about1 from '@/assets/svgs/about-1.svg'
 import {Badge} from "../../UI/Badges/Badge/Badge.tsx";
-import {useState} from "react";
-import {useTypeEffect} from "../../../hooks/useTypeEffect.ts";
+
 
 export const AboutPageFirstSection = () => {
 
@@ -23,7 +22,9 @@ export const AboutPageFirstSection = () => {
                         Мы - проверенный <br /> ВЭД брокер<br /> на рынке финансов<br /> Yan Hait <span className='span h1'>&</span> Monetazone
                     </h1>
 
-                    <div className="badges">
+                    <div className="badges"
+                         data-aos-duration="1400" data-aos='fade-left'
+                         >
                         <Badge
                             data-aos-duration="1100"
                             data-aos='fade-up'
