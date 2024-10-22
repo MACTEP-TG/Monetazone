@@ -2,7 +2,6 @@ import './exchangerPage.scss'
 import exchangerLogo from '@/assets/svgs/exchanger-logo.svg'
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
 import {NavLink} from "react-router-dom";
-import {DatePicker} from "@/components/UI/DatePicker/DatePicker.tsx";
 
 export const ExchangerPage = () => {
     return (

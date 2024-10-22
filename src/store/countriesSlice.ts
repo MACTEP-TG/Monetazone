@@ -1,15 +1,5 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {countries} from "@/utils/countries.ts";
-
-type CountryType = {
-    name: string,
-    flagSVG: string,
-    cities: string [],
-    currencies: string [],
-    issue: boolean,
-    intake: boolean
-
-}
+import {countries, CountryType} from "@/utils/countries.ts";
 
 interface countriesState {
     currentCountries: CountryType []

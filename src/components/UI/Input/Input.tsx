@@ -1,7 +1,9 @@
-import {FC, forwardRef, useId} from 'react';
+import {FC, forwardRef, LegacyRef, useId} from 'react';
 import './input.scss'
 
 interface InputProps {
+    className?: any
+    ref?: any
     state: string
     setState: any
     label: string
@@ -9,7 +11,7 @@ interface InputProps {
     placeholder?: string
 }
 
-export const Input: FC<InputProps> = forwardRef(({state, setState,label, type = 'text', placeholder, children, ...otherProps}, ref) => {
+export const Input: FC<InputProps> = forwardRef(({state, setState,label, type = 'text', placeholder, ...otherProps}, ref: LegacyRef<HTMLDivElement>) => {
     const id = useId()
 
     return (

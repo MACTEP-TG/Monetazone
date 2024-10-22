@@ -1,10 +1,11 @@
-import {FC, useState, useRef, useEffect, forwardRef} from "react";
+import {FC, useState, useRef, useEffect, forwardRef, LegacyRef, RefObject} from "react";
 import './select.scss'
 import arrowRight from '@/assets/svgs/arrow-right.svg';
 import arrowBottom from '@/assets/svgs/arrow-bottom.svg';
 
 
 type SelectType = {
+    ref?: any
     label: string
     placeholder: string
     options: string []
@@ -12,11 +13,11 @@ type SelectType = {
     option: string
 }
 
-export const Select: FC<SelectType> = forwardRef(({options, placeholder = "Выберите" , label, setOption, option}, ref) => {
+export const Select: FC<SelectType> = forwardRef(({options, placeholder = "Выберите" , label, setOption, option}, ref: LegacyRef<HTMLDivElement>) => {
     const [isOpen, setIsOpen] = useState(false);
-    const dropdownRef = useRef(null);
+    const dropdownRef: RefObject<HTMLDivElement> = useRef(null);
 
-    const handleOptionClick = (option) => {
+    const handleOptionClick = (option: any) => {
         setOption(option);
         setIsOpen(false);
     };
@@ -26,7 +27,7 @@ export const Select: FC<SelectType> = forwardRef(({options, placeholder = "Вы�
     };
 
     // Close dropdown when clicking outside
-    const handleClickOutside = (e) => {
+    const handleClickOutside = (e: any) => {
         if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
             setIsOpen(false);
         }

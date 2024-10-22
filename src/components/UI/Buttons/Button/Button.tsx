@@ -2,10 +2,12 @@ import {FC} from "react";
 import './button.scss'
 
 type ButtonType = {
-    type?: 'basic' | 'trans' | 'invert' | 'white'
+    onClick?: any
+    style?: any
+    type?: 'basic' | 'trans' | 'invert' | 'white' | 'whiteBrd'
     className?: string
     children: any
-    isWide: boolean
+    isWide?: boolean
 }
 
 export const Button: FC<ButtonType> = ({children, type = 'basic', isWide= false, ...otherProps}) => {

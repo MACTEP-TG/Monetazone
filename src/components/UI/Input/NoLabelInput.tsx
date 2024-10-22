@@ -1,6 +1,7 @@
 import {FC} from "react";
 
 type noLabelInputType = {
+    children?: any
     value: string
     setValue: any
     type?: string

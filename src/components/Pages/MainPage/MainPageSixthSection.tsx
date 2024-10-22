@@ -1,7 +1,5 @@
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
 import main6 from "@/assets/svgs/main-6.svg";
-import {useState} from "react";
-import {useTypeEffect} from "../../../hooks/useTypeEffect.ts";
 import {useDispatch} from "react-redux";
 import {showAppPopUp} from "../../../store/appPopUpSlice.ts";
 

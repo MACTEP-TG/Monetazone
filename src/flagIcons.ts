@@ -40,7 +40,7 @@ import sweden from './assets/svgs/flags/sweden.svg';
 import estonia from './assets/svgs/flags/estonia.svg';
 import south_korea from './assets/svgs/flags/south_korea.svg';
 
-export const flagIcons = {
+export const flagIcons: { [key: string]: any } = {
     austria,
     azerbaijan,
     armenia,

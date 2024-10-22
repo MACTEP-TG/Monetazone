@@ -6,7 +6,6 @@ import {useRef, useState} from "react";
 import {DatePicker} from "@/components/UI/DatePicker/DatePicker.tsx";
 import {hideAppPopUp} from "@/store/appPopUpSlice.ts";
 import {useAppDispatch} from "@/store/hooks.ts";
-import {isInputElement} from "react-router-dom/dist/dom";
 
 export const FeaTypeApplication = () => {
     const [name, setName] = useState('')

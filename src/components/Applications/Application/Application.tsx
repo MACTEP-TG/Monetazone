@@ -10,7 +10,7 @@ import {setAppType} from "@/store/appPopUpSlice.ts";
 export const Application = () => {
     const dispatch = useDispatch()
 
-    const {applicationType} = useSelector(state => state.appPopUp)
+    const {applicationType} = useSelector((state: any) => state.appPopUp)
 
     return (
         <ApplicationBody>

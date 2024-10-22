@@ -1,6 +1,11 @@
 import './applicationBody.scss'
+import {FC} from "react";
 
-export const ApplicationBody = ({children}) => {
+type ApplicationBodyType = {
+    children: any
+}
+
+export const ApplicationBody: FC<ApplicationBodyType> = ({children}) => {
     return (
         <>
             <div

@@ -1,15 +1,14 @@
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
 import './applicationBottom.scss'
-import {useState} from "react";
-import {useDispatch} from "react-redux";
-import {hideAppPopUp} from "@/store/appPopUpSlice.ts";
+import {FC, useState} from "react";
+
+type ApplicationBottomType = {
+    submitForm: any
+}
 
 
-export const ApplicationBottom = ({submitForm}) => {
+export const ApplicationBottom: FC<ApplicationBottomType> = ({submitForm}) => {
     const [isChecked, setIsChecked] = useState(false)
-
-    const dispatch = useDispatch()
-
     const toggleCheckbox = () => {
         setIsChecked(prev => !prev)
 

@@ -11,7 +11,6 @@ export type CalendarProps = ComponentProps<typeof DayPicker>
 
 export const Calendar = ({
   className = '',
-  classNames = [],
   showOutsideDays = true,
   ...props
 }: CalendarProps) => {
@@ -51,12 +50,11 @@ export const Calendar = ({
         day_disabled: "text-neutral-500 opacity-50 dark:text-neutral-400",
         day_range_middle:
           "aria-selected:bg-neutral-100 aria-selected:text-neutral-900 dark:aria-selected:bg-neutral-800 dark:aria-selected:text-neutral-50",
-        day_hidden: "invisible",
-        ...classNames,
+        day_hidden: "invisible"
       }}
       components={{
-        IconLeft: ({ ...props }) => <ChevronLeft className="h-4 w-4" />,
-        IconRight: ({ ...props }) => <ChevronRight className="h-4 w-4" />,
+        IconLeft: () => <ChevronLeft className="h-4 w-4" />,
+        IconRight: () => <ChevronRight className="h-4 w-4" />,
       }}
       {...props}
     />

@@ -2,15 +2,14 @@ import {Currency} from "@/components/Parts/Contries/Currency.tsx";
 import {FC} from "react";
 
 type CurrencyType = {
-    currencies: []
+    currencies: string []
 }
-
 
 export const Currencies:FC<CurrencyType> = ({currencies}) => {
     return (
         <>
             <div className="currencies">
-                {currencies.map(name => {
+                {currencies.map((name: string) => {
                     return (
                         <>
                             <Currency name={name}/>

@@ -4,6 +4,7 @@ import {useDispatch} from "react-redux";
 import {hideAppPopUp} from "../../../store/appPopUpSlice.ts";
 
 type PopUpType  = {
+    children: any
     isShown: boolean
 }
 

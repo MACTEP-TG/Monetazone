@@ -2,14 +2,14 @@ import {FC} from "react";
 import {City} from "@/components/Parts/Contries/City.tsx";
 
 type CitiesType = {
-    cities: []
+    cities: string []
 }
 
 export const Cities:FC<CitiesType> = ({cities}) => {
     return (
         <>
             <div className="cities">
-                {cities.map(name => {
+                {cities.map((name: string) => {
                     return (
                         <City name={name}/>
                     )

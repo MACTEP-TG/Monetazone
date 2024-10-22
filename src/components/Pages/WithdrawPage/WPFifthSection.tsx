@@ -66,7 +66,7 @@ export const WPFifthSection = () => {
                         <NoLabelInput value={inputValue}
                                       data-aos-duration="2000" data-aos='fade-left'
                                       setValue={setInputValue}
-                                      label='' placeholder='Введите в поиск страну'>
+                                      placeholder='Введите в поиск страну'>
                             <img src={arrow} alt=""/>
                         </NoLabelInput>
                     </div>

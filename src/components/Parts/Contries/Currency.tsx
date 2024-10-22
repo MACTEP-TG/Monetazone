@@ -1,5 +1,10 @@
+import {FC} from "react";
 
-export const Currency = ({name}) => {
+type CurrencyType = {
+    name: string
+}
+
+export const Currency: FC<CurrencyType> = ({name}) => {
     return (
         <>
             <div className='currency'>

@@ -1,4 +1,13 @@
-export const countries = [
+export type CountryType = {
+    name: string,
+    flagSVG: string,
+    cities: string [],
+    currencies: string [],
+    issue: boolean,
+    intake: boolean
+}
+
+export const countries: CountryType [] = [
     {
         name: 'Австрия',
         flagSVG: 'austria',

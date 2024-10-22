@@ -32,7 +32,6 @@ const appPopUpSlice = createSlice({
 
 export const {showAppPopUp,
     hideAppPopUp,
-    changeAppType,
     setAppType} = appPopUpSlice.actions;
 
 export const appPopUpReducer = appPopUpSlice.reducer;

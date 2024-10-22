@@ -12,15 +12,17 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/UI/Popover"
-import {forwardRef, useId, useState} from "react";
+import {FC, forwardRef, LegacyRef, useId} from "react";
 
 type DatePickerType = {
+    className?: string
+    ref?: any
     label: string
     date: Date
     setDate: any
 }
 
-export const DatePicker = forwardRef(({label, date, setDate}, ref) => {
+export const DatePicker: FC<DatePickerType> = forwardRef(({label, date, setDate}, ref: LegacyRef<HTMLDivElement>) => {
     const id = useId()
 
     return (

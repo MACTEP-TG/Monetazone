@@ -1,5 +1,10 @@
+import {FC} from "react";
 
-export const City = ({name}) => {
+type CityType = {
+    name: string
+}
+
+export const City:FC<CityType> = ({name}) => {
     return (
         <>
             <div className='city'>
