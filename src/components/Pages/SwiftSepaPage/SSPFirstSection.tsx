@@ -5,13 +5,13 @@ import './swiftSepaPage.scss'
 export const SSPFirstSection = () => {
     return (
         <>
-            <section className='firstSection'>
+            <section id='1' className='SSP-first'>
                 <img
                     data-aos-duration="1000"
                     data-aos='fade-right'
                     src={swift1} alt=""/>
 
-                <div className="right">
+                <div className='pageRight'>
                     <h1 data-aos-duration="1200"
                         data-aos='fade-left'
                         className="title">
@@ -25,41 +25,35 @@ export const SSPFirstSection = () => {
                          data-aos-duration="1400" data-aos='fade-left'
                     >
                         <Badge
+                            targetId='2'
                             data-aos-duration="1100"
+                            data-aos='fade-up'
+                        >#Мир</Badge>
+                        <Badge
+                            targetId='3'
+                            data-aos-duration="1200"
+                            data-aos='fade-up'
+                        >#Авто</Badge>
+                        <Badge
+                            targetId='4'
+                            data-aos-duration="1300"
                             data-aos='fade-up'
                         >#Валюты</Badge>
                         <Badge
-                            data-aos-duration="1200"
-                            data-aos='fade-up'
-                        >#Товары</Badge>
-                        <Badge
-                            data-aos-duration="1300"
-                            data-aos='fade-up'
-                        >#Услуги</Badge>
-                        <Badge
+                            targetId='5'
                             data-aos-duration="1400"
                             data-aos='fade-up'
-                        >#IT</Badge>
+                        >#Бизнес</Badge>
                         <Badge
+                            targetId='6'
                             data-aos-duration="1500"
                             data-aos='fade-up'
-                        >#Маркетинг</Badge>
+                        >#БезГраниц</Badge>
                         <Badge
+                            targetId='7'
                             data-aos-duration="1600"
                             data-aos='fade-up'
-                        >#Украшения</Badge>
-                        <Badge
-                            data-aos-duration="1700"
-                            data-aos='fade-up'
-                        >#Косметика</Badge>
-                        <Badge
-                            data-aos-duration="1800"
-                            data-aos='fade-up'
-                        >#Недвижимость</Badge>
-                        <Badge
-                            data-aos-duration="1900"
-                            data-aos='fade-up'
-                        >#Сельхозпродукция</Badge>
+                        >#Заявка</Badge>
 
                     </div>
 

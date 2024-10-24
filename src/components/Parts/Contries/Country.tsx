@@ -4,6 +4,8 @@ import {FC} from "react";
 import {Badge} from "@/components/UI/Badges/Badge/Badge.tsx";
 import {Button} from "@/components/UI/Buttons/Button/Button.tsx";
 import {flagIcons} from "@/flagIcons.ts";
+import {setAppType, showAppPopUp} from "@/store/appPopUpSlice.ts";
+import {useDispatch} from "react-redux";
 
 
 type CountryType = {
@@ -16,6 +18,13 @@ type CountryType = {
 }
 
 export const Country:FC<CountryType> = ({name, flagSVG, issue, intake, cities, currencies}) => {
+
+    const dispatch = useDispatch()
+
+    const showApplicationPopUp = () => {
+        dispatch(setAppType('cash'))
+        dispatch(showAppPopUp())
+    }
 
     return (
         <>
@@ -53,7 +62,7 @@ export const Country:FC<CountryType> = ({name, flagSVG, issue, intake, cities, c
                     </div>
 
                     <div className="right">
-                        <Button isWide={true}>Создать заявку</Button>
+                        <Button onClick={showApplicationPopUp} isWide={true}>Создать заявку</Button>
                     </div>
 
                 </div>

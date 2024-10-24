@@ -7,7 +7,7 @@ export const AboutPageEightSection = () => {
     return (
         <>
             <section id={'8'} className='aboutPage-eight'>
-                <div className="aboutLeft">
+                <div className="pageLeft">
                     <h2
                         data-aos-duration="1000"
                         data-aos='fade-right'

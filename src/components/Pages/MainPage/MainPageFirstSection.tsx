@@ -1,7 +1,7 @@
 import main1 from "@/assets/svgs/main-1.svg";
 import {Button} from "../../UI/Buttons/Button/Button.tsx";
 import {useDispatch} from "react-redux";
-import {showAppPopUp} from "../../../store/appPopUpSlice.ts";
+import {showAppPopUp} from "@/store/appPopUpSlice.ts";
 
 export const MainPageFirstSection = () => {
     const dispatch = useDispatch()

@@ -7,15 +7,6 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-
-  @media (min-width: $BP-desk_norm) {
-    font-size: 12px;
-  }
-
-  @media (min-width: $BP_desk_wide) {
-    font-size: 14px;
-  }
-
 }
 
 html.noOverflow {
@@ -123,5 +114,58 @@ p {
 
   & label {
     color: $redColor;
+  }
+}
+
+.pageLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+
+  text-align: start;
+
+  width: 100%;
+}
+
+.pageRight {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+
+  text-align: end;
+
+  width: 100%;
+
+  & .badges {
+    display: grid;
+    gap: 0.2rem;
+    row-gap: 0.8rem;
+
+    text-align: center;
+
+  }
+}
+
+.page section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  width: 100%;
+
+  & h2 span {
+    font-size: $h2FS;
+  }
+
+  & p {
+    max-width: 30rem;
+    text-wrap: wrap;
+  }
+
+  & img {
+    width: 40rem;
   }
 }

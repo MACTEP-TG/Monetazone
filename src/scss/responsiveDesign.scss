@@ -1,0 +1,82 @@
+@import "variables";
+
+html {
+
+  @media (min-width: $BP-desk_norm) {
+    font-size: 12px;
+  }
+
+  @media (min-width: $BP_desk_wide) {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $BP_mobile) {
+
+  header {
+    display: none;
+  }
+
+  .SSP-seventh {
+    & img {
+      display: none;
+    }
+  }
+
+  html {
+    font-size: 8px;
+  }
+
+  .page {
+    & section {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      gap: 5rem;
+
+      &.SSP-first {
+        justify-content: center;
+        align-items: center;
+
+        & .right {
+
+          justify-content: center;
+          align-items: center;
+
+          & h1.title {
+            text-align: center;
+          }
+
+          .badges {
+            display: none;
+          }
+
+          .guide {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .pageRight {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & .badge {
+      display: none;
+    }
+  }
+
+  .pageLeft {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & .badge {
+      display: none;
+    }
+  }
+}

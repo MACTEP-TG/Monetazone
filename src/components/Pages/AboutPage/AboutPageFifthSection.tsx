@@ -15,8 +15,11 @@ export const AboutPageFifthSection = () => {
     return (
         <>
             <section id={'5'} className='aboutPage-fifth'>
-                <img src={about5} alt=""/>
-                <div className="aboutRight">
+                <img
+                    data-aos-duration="1500"
+                    data-aos='fade-right'
+                    src={about5} alt=""/>
+                <div className="pageRight">
                     <h2
                         data-aos-duration="1000"
                         data-aos='fade-left'

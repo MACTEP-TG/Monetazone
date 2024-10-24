@@ -15,7 +15,7 @@ export const AboutPageFirstSection = () => {
 
                 </div>
 
-                <div className="right">
+                <div className="pageRight">
                     <h1 data-aos-duration="1200"
                         data-aos='fade-left'
                         className="title">

@@ -5,6 +5,7 @@ import {DatePicker} from "@/components/UI/DatePicker/DatePicker.tsx";
 import {useRef, useState} from "react";
 import {useAppDispatch} from "@/store/hooks.ts";
 import {hideAppPopUp} from "@/store/appPopUpSlice.ts";
+import {Select} from "@/components/UI/Select/Select.tsx";
 
 export const SwiftTypeApplication = () => {
     const [name, setName] = useState('')
@@ -64,9 +65,11 @@ export const SwiftTypeApplication = () => {
             <form>
                 <Input ref={nameRef} state={name} setState={setName} label='*Ваше имя' placeholder='Укажите ваше имя' />
                 <Input ref={paymentAssignmentRef} state={paymentAssignment} setState={setPaymentAssignment} label='*Назначение платежа' placeholder='Введите назначение платежа' />
-                <Input ref={paymentSystemRef} state={paymentSystem} setState={setPaymentSystem} label='*Платежная система' placeholder='Выберите необходимую вам платежную систему' />
+                <Select ref={paymentSystemRef} option={paymentSystem} setOption={setPaymentSystem} label='*Платежная система'
+                        placeholder='Выберите необходимую вам платежную систему'
+                        options={['Swift', 'Sepa']}/>
                 <Input ref={currencyRef} state={currency} setState={setCurrency} label='*Валюта на сделке' placeholder='Выберите валюту на сделку' />
-                <Input ref={officeRef} state={office} setState={setOffice} label='*Офис' placeholder='Выберите удобный для вас офис' />
+                <Select ref={officeRef} option={office} setOption={setOffice} label='*Офис' placeholder='Выберите удобный для вас офис' options={['Moscow City, Башня Федерация', 'Южное Тушино, Строительный проезд 7а']} />
                 <Input ref={countryRef} state={country} setState={setCountry} label='*Страна зачисления' placeholder='Укажите страну зачисления' />
                 <DatePicker ref={dateRef} date={date} setDate={setDate} label='*Дата сделки' className='DatePicker'/>
 

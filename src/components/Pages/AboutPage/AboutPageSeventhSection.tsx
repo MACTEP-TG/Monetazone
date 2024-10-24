@@ -16,7 +16,7 @@ export const AboutPageSeventhSection = () => {
                      data-aos='fade-right'
                      src={about7} alt=""/>
 
-                <div className="aboutRight">
+                <div className="pageRight">
                     <h2
                         data-aos-duration="1200"
                         data-aos='fade-left'

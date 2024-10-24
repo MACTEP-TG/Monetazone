@@ -5,7 +5,7 @@ import main3 from '@/assets/svgs/main-3.svg'
 export const MainPageThirdSection = () => {
     return (
         <>
-            <section className='mainPage-third'>
+            <div className='mainPage-third'>
                 <div className="title">
                     <div>
                         <h2
@@ -48,7 +48,7 @@ export const MainPageThirdSection = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }

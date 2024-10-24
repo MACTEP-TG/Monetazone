@@ -4,7 +4,7 @@ import about2 from '@/assets/svgs/about-2.svg'
 export const AboutPageSecondSection = () => {
     return (
         <section id={'2'} className='aboutPage-second'>
-            <div className="aboutLeft">
+            <div className="pageLeft">
                 <h2
                     data-aos-duration="1000"
                     data-aos='fade-right'
